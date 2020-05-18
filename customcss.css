@@ -12,6 +12,7 @@ body{
     font-weight:bold;
     border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
 .btnn-mid-to-end{
     position: relative;
@@ -37,6 +38,7 @@ body{
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     z-index: -1;
+    overflow: hidden;
 }
 .btnn-mid-to-end::before{
     position: absolute;
@@ -50,10 +52,11 @@ body{
     z-index: -1;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    overflow: hidden;
 }
 .btnn-mid-to-end:hover::after{
 
-    width: 60%;
+    width: 50%;
     height: 100%;
     left: 50%;
     top: 0;
@@ -61,7 +64,7 @@ body{
 }
 .btnn-mid-to-end:hover::before{
 
-    width: 60%;
+    width: 50%;
     height: 100%;
     left: 0%;
     top: 0;
