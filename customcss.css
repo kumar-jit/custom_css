@@ -1,10 +1,15 @@
 body{
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: rgb(17, 18, 20);
 }
 .center{
     text-align: center;
     padding-top: 300px;
+}
+.btnn-group{
+    display: inline-block;
+    margin: 20px;
 }
 .bttn{
     padding: 10px 27px;
@@ -13,6 +18,9 @@ body{
     border-radius: 25px;
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 .btnn-mid-to-end{
     position: relative;
@@ -69,4 +77,60 @@ body{
     left: 0%;
     top: 0;
     transition: 600ms;
+}
+.btnn-glow{
+    color: white;
+    border-radius: 5px;
+    transition:0.4s ;
+}
+.btnn-glow:hover{
+    color: none;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+                0 0 30px #2196f3,
+                0 0 70px #2196f3;
+    transition:0.4s ;
+}
+.btnn-anmi-glow{
+    border-radius: 5px;
+    background: #2196f3;
+    color: white;
+    animation:moving 2s ease infinite;
+    box-shadow: 0 0 10px #2196f3; 
+    transition: 0.3s;
+}
+@keyframes moving{
+    0%,10%{
+        box-shadow: 0 0 10px #2196f3;
+        
+    }
+    40%{
+        box-shadow: 0 0 10px #2196f3,0 0 70px #2196f3;
+        
+    }
+    70%{
+        box-shadow: 0 0 10px #2196f3,0 0 70px #2196f3;
+        
+    }
+   
+}
+.btnn-anmi-glow:hover{
+    background-color:  #FD46F0;
+    animation:movingc 2s ease infinite;
+    box-shadow: 0 0 10px #FD46F0; 
+}
+@keyframes movingc{
+    0%,10%{
+        box-shadow: 0 0 10px #FD46F0;
+        
+    }
+    40%{
+        box-shadow: 0 0 10px #FD46F0,0 0 70px #FD46F0;
+        
+    }
+    70%{
+        box-shadow: 0 0 10px #FD46F0,0 0 70px #FD46F0;
+        
+    }
+   
 }
